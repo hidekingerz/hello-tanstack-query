@@ -1,19 +1,11 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import Layout from './layout';
-
-
-const Main = () => {
-  return (
-    <div>main</div>
-  )
-}
+import { Main } from '../feature/main/Main';
 
 const Sub = () => {
-  return (
-    <div>sub</div>
-  )
-}
+  return <Link to={'/main'}> to main </Link>;
+};
 
 export default function App() {
   return (
